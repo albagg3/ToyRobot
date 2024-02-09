@@ -18,10 +18,10 @@ F  the robot will be facing these orientations (NORTH, SOUTH, EAST, WEST)<br/>
 In case the instruction is not written correctly you will receive a message.
 If you want to move the robot out of the board you will receive a message and the robot won't move.
 
-There is a testing file, testing the parsing functions you can try it doing:```bash node testing.js ```
+There is a testing file, testing the parsing functions you can try it doing: ```node testing.js ```
 
 # Try it
 * Clone the repository
-* To execute the program please type:```bash node game.js``` and follow the instructions
+* To execute the program please type:```node game.js``` and follow the instructions
 * To exit the program type: EXIT
 * If you want to see a graphic representation of the board and the robot and know the current orientation, please uncomment lines 38 and 39 from game.js
