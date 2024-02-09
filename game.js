@@ -1,5 +1,5 @@
 
-const { isvalidPlaceInput } = require('./parsingFunctions.js');
+const { isValidPlaceInput } = require('./parsingFunctions.js');
 const {RED, RESET, GREEN} = require('./colors.js') 
 const readline = require('readline');
 
@@ -20,7 +20,7 @@ function askForInstruction() {
         if (input === 'EXIT') {
             rl.close();
         } else {
-            robot = isvalidPlaceInput(input, robot)
+            robot = isValidPlaceInput(input, robot)
             if (robot)
             {
                 if(input === "MOVE")

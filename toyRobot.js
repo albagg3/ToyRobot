@@ -19,6 +19,7 @@ class ToyRobot {
             this.orientation = 'EAST';
         else if(this.orientation === 'EAST')
             this.orientation = 'NORTH';
+        return ;
     }
 
     right()
@@ -31,6 +32,7 @@ class ToyRobot {
             this.orientation = 'WEST';
         else if(this.orientation === 'WEST')
             this.orientation = 'NORTH';
+        return ;
     }
 
     move() 
@@ -46,9 +48,10 @@ class ToyRobot {
         else
         {
             console.log(`${RED}That movement is out of the board${RESET}`)
-            return;
+            return ;
         }
         this.place();
+        return ;
     }
 
     place()
@@ -63,11 +66,13 @@ class ToyRobot {
                     this.board[j][i] = '';
             }
         }
+        return ;
     }
     
     report()
     {
         console.log(`${this.posX},${this.posY},${this.orientation}`)
+        return ;
     }
 };
 

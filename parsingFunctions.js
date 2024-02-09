@@ -6,7 +6,7 @@ const isValidCoordinate = (coordinate) =>{
     if (coordinate ==='NORTH'|| coordinate ==='SOUTH' || coordinate ==='EAST'|| coordinate ==='WEST')
         return true;
     else
-        false;
+        return false;
 } 
 
 const isOutOfTheBoard = (x, y) =>{
@@ -37,7 +37,6 @@ const isValidPlaceInput = (input, robot) =>{
     {
         const cleanInput = input.replace("PLACE", "").trim()
         const coordinatesArr = cleanInput.split(",");
-        console.log(coordinatesArr)
         if(coordinatesArr.length != 3)
         {
             console.log(`${RED}The input is incorrect${RESET}`);
